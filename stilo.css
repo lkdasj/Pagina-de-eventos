@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+/* Encabezado */
+.contenedor-header{
+    background-color: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo img {
+    text-decoration: none;
+    width: 100%;
+}
+
+/* menu */
+
+.inicio {
+    background: url(img/fondo.png) no-repeat center;
+    background-size: cover;
+    padding: 90px 0 100px 0;
+    align-items: center;
+}
+
+.title{
+    background-color: #0008017e;
+    border-radius: 40px;
+    align-items: center;
+    padding: 50px 40px 20px;
+    color: #fdfdfd;
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: serif;
+    margin-bottom: 15px;
+}
+
+.product {
+    display: flex;
+    position: relative;
+}
+
+.hoja {
+    right: 0;
+    position: absolute;
+    bottom: -100px;
+    width: 400px;
+}
+
+.menu-nav {
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.tab {
+    margin-right: 20px;
+    text-align: center;
+    padding: 10px 35px;
+    border-radius: 25px;
+    color: #a0a0a0;
+    font-size: 16px;
+    font-weight: 800;
+    background-color: #24252a;
+    cursor: pointer;
+}
+
+.tab.active {
+    background: linear-gradient(90deg, #04ff1d 50%, #000801 100%);
+    color: #fdfdfd;
+}
+
+.tab.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.visible {
+    display: initial;
+}
+
+.box-container-1,
+.box-container-2,
+.box-container-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.box-1,
+.box-2,
+.box-3 {
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.695)), url(img/dondo2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+
+}
+
+.box-1:nth-child(1),
+.box-1:nth-child(2),
+.box-1:nth-child(3),
+.box-1:nth-child(4),
+.box-1:nth-child(5),
+.box-1:nth-child(6),
+.box-1:nth-child(7),
+.box-1:nth-child(8){
+    display: inline-block;
+}
+
+.box-2:nth-child(1),
+.box-2:nth-child(2),
+.box-2:nth-child(3),
+.box-2:nth-child(4),
+.box-2:nth-child(5){
+    display: inline-block;
+}
+
+.box-3:nth-child(1),
+.box-3:nth-child(2),
+.box-3:nth-child(3),
+.box-3:nth-child(4) {
+    display: inline-block;
+}
+
+.image {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.image img {
+    border: 5px solid #04ff1d;
+    border-radius: 100%;
+    width: 180px;
+}
+
+.content h3 {
+    text-align: center;
+    font-size: 20px;
+    color: #fdfdfd;
+}
+
+.content p {
+    text-align: center;
+    font-size: 15px;
+    color: #a0a0a0;
+    line-height: 2;
+    font-size: 15px;
+    padding: 15px 0;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 3px solid #334;
+}
+
+.buy {
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    background: linear-gradient(90deg, #95b52c 0%, #586e25 100%);
+    padding: 10px 30px 5px 30px;
+    margin-right: 0px;
+    color: #fdfdfd;
+    border-radius: 15px;
+}
+
+.buy img {
+    width: 20px;
+}
