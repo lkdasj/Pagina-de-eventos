@@ -12,7 +12,6 @@ html{
 /* Encabezado */
 .contenedor-header{
     background-color: #1e2326;
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -38,21 +37,19 @@ html{
 .inicio {
     background: url(img/fondo.png) no-repeat center;
     background-size: cover;
-    padding: 90px 0 100px 0;
+    padding: 0px 0 100px 0;
     align-items: center;
 }
 
 .title{
-    background-color: #0008017e;
-    border-radius: 40px;
-    align-items: center;
-    padding: 50px 40px 20px;
-    color: #fdfdfd;
-    text-align: center;
-    font-size: 45px;
+    background-color: #00000073;
+    border-end-start-radius: 50px;
+    border-end-end-radius: 50px;
+    color: #ffffff;
+    font-size: 40px;
     text-transform: uppercase;
     font-family: serif;
-    margin-bottom: 15px;
+    padding: 20px 20px 20px 20px;
 }
 
 .product {
@@ -60,16 +57,10 @@ html{
     position: relative;
 }
 
-.hoja {
-    right: 0;
-    position: absolute;
-    bottom: -100px;
-    width: 400px;
-}
-
 .menu-nav {
     display: flex;
-    margin-bottom: 45px;
+    margin-bottom: 0px;
+    padding: 20px 0px 30px 15px;
 }
 
 .tab {
@@ -106,9 +97,10 @@ html{
 .box-container-1,
 .box-container-2,
 .box-container-3 {
+    padding: 0px 10px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-    gap: 20px;
+    gap: 10px;
 }
 
 .box-1,
