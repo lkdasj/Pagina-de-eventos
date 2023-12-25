@@ -11,27 +11,38 @@
 </head>
 <body>
     
-    <!--Encabezado-->
+    <!-- Encabezado -->
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="https://ignacio-j3.github.io/huaso_friki/"><img src="img/logo.png" alt=""></a>
+                <a href=""><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="casa">
+                <a href="https://ignacio-j3.github.io/huaso_friki/"><i class="fa-solid fa-home"></i></a>
             </div>
         </header>
     </div>
 
-    <!---Menu inicio--->
+    <!-- Contenido principal -->
     <main class="inicio">
         <div class="container">
+            <div class="contenedor">
             <div class="product">
                 <h2 class="title">Fechas de expos</h2>
             </div>
-
-        <!--Barrera de informacion del menu o contenido-->
-            <div id="perfiles" class="menu-nav">
-                <div id="pro1" class="tab active">Chillán</div>
-                <div id="pro2" class="tab">Chillán Viejo</div>
+            <!-- Añadido: Sección de selección de zona -->
+            <div class="select-zone">
+                <label for="opciones">Selecciona una zona:</label>
+                <select id="opciones">
+                    <option value="" selected disabled>Busca tu zona...</option>
+                    <option value="pro1">Chillán</option>
+                    <option value="pro2">Chillán Viejo</option>
+                    <option value="pro3">San Carlos</option>
+                </select>
+                <button type="button" onclick="mostrarSeleccion()">Mostrar</button>
             </div>
+            </div>
+
 
        <!--Pagina 1 de chillan-->
             <div class="pro1 tab-content">
@@ -39,85 +50,21 @@
 
                     <div class="box-1">
                         <div class="image">
-                            <img src="expo/expomola.jpeg" alt="">
+                            <img src="expo/nada.png" alt="">
                         </div>
                         <div class="content">
-                            <h3>EXPO MOLA</h3>
+                            <h3>Nada por el momento</h3>
                             <p>
-                                Fecha: 23 y 24 de Septiembre<br>En parque deportivo Quilamapu
+                                Fecha: -- / -- / --<br> []
                                 <br>
-                                <a href="https://www.instagram.com/p/CxGEEeWuGl2/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
-                                    <span class="buy"><img src="img/insta.png" alt=""><br>Más información</span>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="box-1">
-                        <div class="image">
-                            <img src="expo/expomola.jpeg" alt="">
-                        </div>
-                        <div class="content">
-                            <h3>EXPO MOLA</h3>
-                            <p>
-                                Fecha: 27, 28 y 29 de Septiembre<br>En parque deportivo Quilamapu
-                                <br>
-                                <a href="https://www.instagram.com/p/CwocMInu_cR/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
+                                <a href="#####">
                                     <span class="buy"><img src="img/insta.png" alt=""><br>Más información</span>
                                 </a>
                             </p>
                         </div>
                     </div>
 
-                    <div class="box-1">
-                        <div class="image">
-                            <img src="expo/otoke.ent.jpeg" alt="">
-                        </div>
-                        <div class="content">
-                            <h3>OTOKE.ENT</h3>
-                            <p>
-                                Fecha: 14 y 15 de Octubre<br>En Plaza santo domingo
-                                <br>
-                                <br>
-                                <a href="https://www.instagram.com/reel/Cw3JoxdObja/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
-                                    <span class="buy"><img src="img/insta.png" alt=""><br>Más información</span>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
 
-                    <div class="box-1">
-                        <div class="image">
-                            <img src="expo/exporandomarena.jpeg" alt="">
-                        </div>
-                        <div class="content">
-                            <h3>EXPO RANDOM ARENA</h3>
-                            <p>
-                                Fecha: 27-28 y 29 de Octubre<br>
-                                <br>
-                                <a href="https://www.instagram.com/morrislandcl/">
-                                    <span class="buy"><img src="img/insta.png" alt=""><br>Más información</span>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="box-1">
-                        <div class="image">
-                            <img src="expo/morrisland.jpeg" alt="">
-                        </div>
-                        <div class="content">
-                            <h3>MORRISLAND</h3>
-                            <p>
-                                Fecha: 4 y 5 de Noviembre<br>En Gimnasio Quilamapu
-                                <br>
-                                <br>
-                                <a href="https://www.instagram.com/reel/CwAyKtJAHYn/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
-                                    <span class="buy"><img src="img/insta.png" alt=""><br>Más información</span>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
 
                 </div>
             </div>
@@ -128,14 +75,14 @@
 
                     <div class="box-2">
                         <div class="image">
-                            <img src="expo/exporandomarena.jpeg" alt="">
+                            <img src="expo/nada.png" alt="">
                         </div>
                         <div class="content">
-                            <h3>EXPO RANDOM ARENA</h3>
+                            <h3>Nada por el momento</h3>
                             <p>
-                                Fechas: 7 y 8 de Octubre<br>En Plaza de Armas
+                                Fecha: -- / -- / --<br> []
                                 <br>
-                                <a href="https://www.instagram.com/p/Cv-HO3ruQyz/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
+                                <a href="#####">
                                     <span class="buy"><img src="img/insta.png" alt=""><br>Más información</span>
                                 </a>
                             </p>
@@ -145,8 +92,43 @@
                 </div>
             </div>
 
+        <!--Pagina 3 de San Carlos-->
+            <div class="pro3 tab-content">
+                <div class="box-container-3">
+
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="expo/nada.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Nada por el momento</h3>
+                            <p>
+                                Fecha: -- / -- / --<br> []
+                                <br>
+                                <a href="#####">
+                                    <span class="buy"><img src="img/insta.png" alt=""><br>Más información</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="redes">
+            <h1 class="titulo2">Informacion</h1>
+            <p>
+                Si sabes de alguna expo y que no esta ahi registrado<br>Unete al chat grupal de instagram para informar
+            </p>
+            <a href="https://ig.me/j/AbbU3FDDvplTjc7z/"><i class="fa-brands fa-instagram"></i></a><br>
+            <img class="gif" src="img/kirby ramen.gif" alt="GIF">
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 

@@ -1,6 +1,5 @@
-
-function seleccionar(){
-    //oculto el menu una vez que selecciono una opcion
+function seleccionar() {
+    // Oculto el menú una vez que selecciono una opción
     document.getElementById("nav").classList = "";
     menuVisible = false;
 }
@@ -17,8 +16,8 @@ function hasClass(element, className) {
 }
 
 function radioClass(element, className) {
-    E("." + className).forEach((elem)=>
-    elem.classList.remove(className));
+    E("." + className).forEach((elem) =>
+        elem.classList.remove(className));
     element.classList.toggle(className);
 }
 
@@ -28,23 +27,32 @@ function tabs(nav) {
     navElem.addEventListener("click", (e) => {
         let target = e.target;
 
-        if(hasClass(target, "tab"))
+        if (hasClass(target, "tab"))
             radioClass(target, "active");
 
         let linkedtab = E("." + target.id)[0];
 
         radioClass(linkedtab, "visible");
-
-
     });
 
     let active = E(".tab.active")[0];
     if (active) {
-        radioClass(E("."+active.id)[0], "viisible");
+        radioClass(E("." + active.id)[0], "visible");
     }
-
 }
 
+function mostrarSeleccion() {
+    var opciones = document.getElementById("opciones");
+    var seleccion = opciones.options[opciones.selectedIndex].value;
 
+    // Ocultar todas las secciones
+    var secciones = document.querySelectorAll('.tab-content');
+    for (var i = 0; i < secciones.length; i++) {
+        secciones[i].style.display = "none";
+    }
 
-tabs(".menu-nav")
+    // Mostrar la sección seleccionada
+    document.querySelector('.' + seleccion).style.display = "grid";
+}
+
+tabs(".menu-nav");
