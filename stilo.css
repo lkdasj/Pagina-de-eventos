@@ -109,14 +109,14 @@ body{
     transition: background-color 0.3s, color 0.3s;
 }
 .select-zone button:hover {
-    background-color: #1c1d1d;
+    background-color: #000000;
     color: #04ffe6;
 }
 .select-zone select {
     padding: 10px;
     font-size: 16px;
     border: 2px solid #04ffe6;
-    background-color: #1c1d1d;
+    background-color: #000000;
     color: white;
 }
 .select-zone label,
