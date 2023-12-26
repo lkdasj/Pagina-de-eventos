@@ -64,7 +64,7 @@ body{
     margin: 4px 5px;
     transition: .3s;
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 30px;
 }
 .casa a:hover {
@@ -190,7 +190,8 @@ body{
 
 .box-container-1,
 .box-container-2,
-.box-container-3 {
+.box-container-3,
+.box-container-4 {
     padding: 0px 10px;
     display: grid;
     grid-template-columns: repeat(5, minmax(190px, 1fr));
@@ -199,7 +200,8 @@ body{
 
 .box-1,
 .box-2,
-.box-3 {
+.box-3,
+.box-4 {
     background-image: linear-gradient(to top,rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.695)), url(img/dondo2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -235,6 +237,13 @@ body{
 .box-3:nth-child(2),
 .box-3:nth-child(3),
 .box-3:nth-child(4) {
+    display: inline-block;
+}
+
+.box-4:nth-child(1),
+.box-4:nth-child(2),
+.box-4:nth-child(3),
+.box-4:nth-child(4) {
     display: inline-block;
 }
 
