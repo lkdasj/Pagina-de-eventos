@@ -103,6 +103,7 @@ body{
     background-color: #04ffe6;
     color: #1c1d1d;
     border: 2px solid #04ffe6;
+    font-weight: bold;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
