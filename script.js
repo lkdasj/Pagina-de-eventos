@@ -5,8 +5,9 @@ function seleccionar() {
 }
 
 function E(selector, parent) {
-    if (selector instanceof HTMLElement)
+    if (selector instanceof HTMLElement) {
         return selector;
+    }
 
     return (parent || document).querySelectorAll(selector);
 }
@@ -21,9 +22,7 @@ function radioClass(element, className) {
     element.classList.toggle(className);
 }
 
-function tabs(nav) {
-    let navElem = E(nav)[0];
-
+function tabs(navElem) {
     navElem.addEventListener("click", (e) => {
         let target = e.target;
 
@@ -55,4 +54,6 @@ function mostrarSeleccion() {
     document.querySelector('.' + seleccion).style.display = "grid";
 }
 
-tabs(".menu-nav");
+// Obtener el elemento del menú y llamar a la función tabs
+var menuNav = document.querySelector(".menu-nav");
+tabs(menuNav);
