@@ -72,6 +72,12 @@ body{
 }
 
 /* menu */
+.actualizacion {
+    background-color: #000000a3;
+    color: #5eff00;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+}
 
 .inicio {
     background-size: cover;
@@ -88,6 +94,10 @@ body{
     border-end-end-radius: 50px;
     border: 5px solid #04ffe6;
     padding: auto;
+}
+
+.contenedor1{
+    background-color: #000000a3;
 }
 
 .select-zone {
