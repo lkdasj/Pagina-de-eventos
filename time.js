@@ -2,7 +2,7 @@
 function actualizarInfoActualizacion() {
     // Define la fecha de actualización en tu formato preferido
                                      //año-mes-dia/H -M -S
-    var fechaActualizacion = new Date('2024-02-05 17:46:00');  // Reemplaza esto con la fecha de tu última actualización
+    var fechaActualizacion = new Date('2024-05-01 01:07:00');  // Reemplaza esto con la fecha de tu última actualización
     var ahora = new Date();
     var diferencia = ahora - fechaActualizacion;
 
